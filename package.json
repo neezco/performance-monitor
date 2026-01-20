@@ -1,16 +1,19 @@
 {
-  "name": "@danhezcode/ts-template",
+  "name": "performance-monitor",
   "version": "1.0.0",
   "type": "module",
-  "author": "Author Name <author.name@mail.com>",
+  "author": {
+    "name": "Daniel Hernández Ochoa",
+    "url": "https://github.com/DanhezCode"
+  },
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/neezco/performance-monitor#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/neezco/performance-monitor.git"
   },
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/neezco/performance-monitor/issues"
   },
   "exports": {
     ".": "./dist/index.mjs",
