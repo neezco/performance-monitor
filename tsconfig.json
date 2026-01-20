@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    // ----------------------------------------
+    // JS/TS language features
+    // ----------------------------------------
+    "target": "ESNext", // Use latest JS features
+    "lib": ["ESNext"], // Include latest JS APIs
+    // "allowJs": true, // Allow .js files in the project
+
+    // ----------------------------------------
+    // Interoperability
+    // ----------------------------------------
+    "resolveJsonModule": true, // Allow importing .json files
+    "types": ["node"], // Include Node.js type definitions
+    "esModuleInterop": true, // Enable default-like imports for CommonJS
+
+    // ----------------------------------------
+    // Core build behavior
+    // ----------------------------------------
+    "incremental": true, // Enable incremental compilation for faster rebuilds
+    "declaration": true, // Generate .d.ts type declaration files
+    "emitDeclarationOnly": true, // Emit only .d.ts files without generating JavaScript
+    // "noEmit": true, // Type checking only; do not emit JS
+    // "outDir": "./dist",        // Output directory for emitted files
+
+    // ----------------------------------------
+    // Module system & resolution
+    // ----------------------------------------
+    "module": "preserve", // Keep import/export syntax as written
+    "moduleResolution": "bundler", // Modern bundler-friendly resolution
+    "moduleDetection": "force", // Force module detection for ESNext
+    "verbatimModuleSyntax": true, // Preserve exact import/export syntax
+    // "allowImportingTsExtensions": true, // Allow importing .ts with explicit extensions
+
+    // ----------------------------------------
+    // Type checking & strictness
+    // ----------------------------------------
+    "strict": true, // Enable all strict type checking
+    "skipLibCheck": true, // Skip type checking of external libs
+    "noFallthroughCasesInSwitch": true, // Prevent silent fallthrough
+    "noUncheckedIndexedAccess": true, // Safer indexed access
+    "noImplicitOverride": true, // Require `override` keyword
+    "isolatedDeclarations": true, // Ensure each file can generate its own .d.ts in isolation (safer, deterministic types)
+
+    // ----------------------------------------
+    // Misc flags
+    // ----------------------------------------
+    "noUnusedLocals": false, // Allow unused local variables (fix by linter)
+    "noUnusedParameters": false, // Allow unused function parameters (useful for API signatures or future expansion)
+    "noPropertyAccessFromIndexSignature": false // Permit direct property access even when coming from an index signature
+
+    // ----------------------------------------
+    // JSX
+    // ----------------------------------------
+    // "jsx": "react-jsx", // Modern JSX transform
+    // "jsxImportSource": "preact", // Uncomment for Preact
+  },
+
+  // Only analyze files inside src/
+  "include": ["src"]
+}
